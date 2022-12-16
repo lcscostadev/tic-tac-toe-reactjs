@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap');
+
+
+.status {
+    font-size: 3rem;
+    padding: 30px;
+    font-family: 'Chivo Mono', monospace;
+    color: #fff;
+}
+
+.restart {
+    background: none;
+    border: 3px solid white;
+    padding: 15px 35px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    transition: ease-in-out .5s;
+}
+
+.restart:hover {
+    border-color: red;
+    color: red;
+}

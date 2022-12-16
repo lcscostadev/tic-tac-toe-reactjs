@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.square {
+    width: 90px;
+    height: 90px;
+    margin: 2px;
+    text-align: center;
+    border: 5px solid #c3c3c3;
+    font-size: 5rem;
+    overflow: hidden;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: ease-in-out .5s;
+}
+
+.square:hover {
+    background-color: #ccc
+}
+
+
+body {
+    background: rgb(75, 64, 225);
+}

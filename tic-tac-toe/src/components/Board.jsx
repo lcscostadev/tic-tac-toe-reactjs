@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Square from './Square';
+import './Board.css'
 
 const Board = () => {
 
@@ -49,7 +50,7 @@ const Board = () => {
     let status;
 
     if (winner) {
-        status = `Winner ${winner}`;
+        status = `Winner is ${winner}`;
     } else {
         status = `Next player: ${isX ? 'X' : 'O'}`;
     }
@@ -66,6 +67,7 @@ const Board = () => {
 
     return (
         <>
+            <div className='status'>{status}</div>
             <div className='board'>
                 <div className='board-row'>
                     {renderSquare(0)}
@@ -82,7 +84,6 @@ const Board = () => {
                     {renderSquare(7)}
                     {renderSquare(8)}
                 </div>
-                <div className='status'>{status}</div>
                 <button className='restart' onClick={handleRestart}>Restart Game</button>
             </div>
         </>
